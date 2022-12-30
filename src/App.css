@@ -3,7 +3,59 @@ body{
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
+.App{
+  background-color: rgb(231, 230, 230);
+  height: 90vh;
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cbox-container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2%;
+}
 .cbox{
   display: flex;
   justify-content: center;
+}
+.Header{
+  
+  font-weight: 500;
+}
+
+.textbox{
+  background-color: rgb(214, 214, 214);
+  width: 120vh;
+  font-weight: 400;
+  font-size: medium;
+}
+.passwordDisplay{
+  display: flex;
+  justify-content: center;
+}
+.generator{
+  background-color:#138496 ;
+  color: white;
+  border-color: #9cd7e1;
+  border-radius: 5px;
+  width: 60%;
+  height: 30px;
+  margin-top: 2%;
+}
+.formG{
+  display: flex;
+  justify-content: center;
+  gap: 65vh ;
+  
+}
+label{
+  font-size: 3.5vh;
+  font-weight: 300;
 }

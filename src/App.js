@@ -54,7 +54,7 @@ function App() {
       <div className='container'>
           <h2 className='Header'>Password Generator</h2>
           <div className='passwordDisplay'>
-            <h3>{password}</h3>
+            <h3 className='textbox'>{password}</h3>
           </div>
 
           <div className='formG'>
@@ -67,42 +67,47 @@ function App() {
             max='20'/>
           </div>
 
+          <div className='cbox-container'>
           <div className='cbox'>
-            <label >Include UpperCase Letters</label>
+            
             <input
             checked={includeUppercase}
             onChange={(e)=> setIncludeUppercase(e.target.checked)}
             type="checkbox"
             />
+            <label >Include Upper Case Letters</label>
           </div>
 
           <div className='cbox'>
-            <label >Include LowerCase Letters</label>
+            
             <input
             checked={includeLowercase}
             onChange={(e)=> setIncludeLowercase(e.target.checked)}
             type="checkbox"
             />
+            <label >Include Lower Case Letters</label>
           </div>
 
           <div className='cbox'>
-            <label >Include Numbers</label>
+            
             <input
             checked={includeNumbers}
             onChange={(e)=> setIncludeNumbers(e.target.checked)}
             type="checkbox"
             />
+            <label >Include Numbers</label>
           </div>
 
           <div className='cbox'>
-            <label >Include Symbols</label>
+            
             <input
             checked={includeSymbols}
             onChange={(e)=> setIncludeSymbols(e.target.checked)}
             type="checkbox"
             />
+            <label >Include Symbols</label>
           </div>
-
+          </div>
           <button onClick={GeneratePassword} className='generator'>Generate Password</button>
       </div>
     </div>
